@@ -1,0 +1,29 @@
+{
+  "name": "markdown-it-figure",
+  "version": "0.1.0",
+  "description": "Plugin to create figures with reference links for markdown-it markdown parser",
+  "repository": "markdown-it/markdown-it-figure",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec",
+    "build": "./node_modules/.bin/browserify ./ > dist/markdown-it-figure.js",
+    "publish": "./node_modules/.bin/terser dist/markdown-it-figure.js -b beautify=false,ascii_only=true -c -m > dist/markdown-it-figure.min.js",
+    "step": "rmdir -rf .\\dist"
+  },
+  "keywords": [
+    "markdown-it-plugin",
+    "markdown-it",
+    "markdown",
+    "figure"
+  ],
+  "devDependencies": {
+    "browserify": "*",
+    "coveralls": "^2.11.2",
+    "eslint": "^3.5.0",
+    "istanbul": "*",
+    "markdown-it": "markdown-it/markdown-it",
+    "markdown-it-testgen": "~0.1.0",
+    "mocha": "*",
+    "terser": "^3.17.0"
+  }
+}

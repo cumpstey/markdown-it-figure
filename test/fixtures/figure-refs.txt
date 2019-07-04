@@ -1,0 +1,75 @@
+
+Simple figure
+.
+This is a reference to +[figure a].
+
++++ a:
+*content*
++++
+.
+<p>This is a reference to <a href="#fig1" class="figure-ref">figure 1</a>.</p>
+<figure id="fig1">
+<p><em>content</em></p>
+<figcaption>Figure 1</figcaption>
+</figure>
+.
+
+
+Multiple character ref
+.
+This is a reference to +[figure abc].
+
++++ abc:
+*content*
++++
+.
+<p>This is a reference to <a href="#fig1" class="figure-ref">figure 1</a>.</p>
+<figure id="fig1">
+<p><em>content</em></p>
+<figcaption>Figure 1</figcaption>
+</figure>
+.
+
+
+Figure with caption
+.
+This is a reference to +[figure a].
+
++++ a: A caption
+*content*
++++
+.
+<p>This is a reference to <a href="#fig1" class="figure-ref">figure 1</a>.</p>
+<figure id="fig1">
+<p><em>content</em></p>
+<figcaption>Figure 1: A caption</figcaption>
+</figure>
+.
+
+
+Multiple figures
+.
+This is a reference to +[figure a].
+
++++ a: A caption
+*content*
++++
+
++++ b:
+*content*
++++
+
+And a reference to +[figure b].
+.
+<p>This is a reference to <a href="#fig1" class="figure-ref">figure 1</a>.</p>
+<figure id="fig1">
+<p><em>content</em></p>
+<figcaption>Figure 1: A caption</figcaption>
+</figure>
+<figure id="fig2">
+<p><em>content</em></p>
+<figcaption>Figure 2</figcaption>
+</figure>
+<p>And a reference to <a href="#fig2" class="figure-ref">figure 2</a>.</p>
+.
+

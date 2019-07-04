@@ -1,0 +1,130 @@
+
+Simple figure
+.
++++
+*content*
++++
+.
+<figure id="fig1">
+<p><em>content</em></p>
+</figure>
+.
+
+
+Figure with caption
+.
++++ This is a caption
+*content*
++++
+.
+<figure id="fig1">
+<p><em>content</em></p>
+<figcaption>This is a caption</figcaption>
+</figure>
+.
+
+
+Numbering of ids
+.
++++
+*content 1*
++++
+
++++
+*content 2*
++++
+
++++
+*content 3*
++++
+.
+<figure id="fig1">
+<p><em>content 1</em></p>
+</figure>
+<figure id="fig2">
+<p><em>content 2</em></p>
+</figure>
+<figure id="fig3">
+<p><em>content 3</em></p>
+</figure>
+.
+
+
+Could contain block elements too
+.
++++
+### heading
+
+-----------
++++
+.
+<figure id="fig1">
+<h3>heading</h3>
+<hr>
+</figure>
+.
+
+
+Ending marker could be longer
+.
+++++ caption
+  this is a figure
++++++++++++++++++
+.
+<figure id="fig1">
+<p>this is a figure</p>
+<figcaption>caption</figcaption>
+</figure>
+.
+
+
+Marker could be indented up to 3 spaces
+.
+   +++
+   content
+    +++
+   +++
+.
+<figure id="fig1">
+<p>content
++++</p>
+</figure>
+.
+
+
+But that's a code block
+.
+    +++ caption
+    content
+    +++
+.
+<pre><code>+++ caption
+content
++++
+</code></pre>
+.
+
+
+Self-close at the end of the document
+.
++++
+content
+.
+<figure id="fig1">
+<p>content</p>
+</figure>
+.
+
+
+Should terminate paragraphs
+.
+blah blah
++++
+content
++++
+.
+<p>blah blah</p>
+<figure id="fig1">
+<p>content</p>
+</figure>
+.
