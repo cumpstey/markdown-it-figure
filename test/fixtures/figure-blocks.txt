@@ -24,6 +24,19 @@ Figure with caption
 .
 
 
+Caption with formatting
+.
++++ This _is_ a **caption**
+content
++++
+.
+<figure id="fig1">
+<p>content</p>
+<figcaption>This <em>is</em> a <strong>caption</strong></figcaption>
+</figure>
+.
+
+
 Numbering of ids
 .
 +++

@@ -32,6 +32,8 @@ function render_figure_caption(tokens, idx, options, env, slf) {
   }
 
   if (tokens[idx].meta.caption) {
+    // console.log(tokens[idx].meta.caption)
+    // console.log(slf.renderInline(tokens[idx].meta.caption))
     captionParts.push(tokens[idx].meta.caption);
   }
 
@@ -145,7 +147,7 @@ module.exports = function figure_plugin(md, options) {
     var refMatch = params.match(/^\s*(?<numbered>(?<ref>[a-z0-9_-]*)\s*:)?\s*(?<caption>.*)\s*$/i);
     if (refMatch) {
       ref = refMatch.groups.ref;
-      caption = refMatch.groups.caption;
+      caption = md.renderInline(refMatch.groups.caption);
       numbered = !!refMatch.groups.numbered;
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "@cwm/markdown-it-figure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin to create figures with reference links for markdown-it markdown parser",
   "repository": "markdown-it/markdown-it-figure",
   "license": "MIT",
