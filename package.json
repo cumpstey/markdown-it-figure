@@ -17,13 +17,13 @@
     "figure"
   ],
   "devDependencies": {
-    "browserify": "*",
-    "coveralls": "^2.11.2",
-    "eslint": "^3.5.0",
-    "istanbul": "*",
-    "markdown-it": "markdown-it/markdown-it",
-    "markdown-it-testgen": "~0.1.0",
-    "mocha": "*",
+    "browserify": "^16.2.3",
+    "coveralls": "^3.0.6",
+    "eslint": "^5.9.0",
+    "istanbul": "^0.4.5",
+    "markdown-it": "^9.0.1",
+    "markdown-it-testgen": "^0.1.6",
+    "mocha": "^5.2.0",
     "terser": "^3.17.0"
   }
 }
